@@ -1,0 +1,11 @@
+version: '3'
+services:
+  dev:
+    image: node:11
+    volumes:
+      - .:/usr/src/service
+    working_dir: /usr/src/service
+    command: npm start
+    ports:
+      - 1234:1234
+      - 1235:1235
